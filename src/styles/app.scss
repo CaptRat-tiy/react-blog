@@ -5,7 +5,7 @@ body {
 
 .app-header {
   height: 60px;
-  background-color: slategrey;
+  background-color: black;
   width: 100%;
 }
 
@@ -16,7 +16,6 @@ body {
   align-items: stretch;
   min-height: 1000px;
   height: 100%;
-}
 
   .app-nav {
     width: 100px;
@@ -26,17 +25,31 @@ body {
     justify-content: flex-start;
     align-items: stretch;
 
-      .nav-item {
-        height: 60px;
-        background-color: coral;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
+     .nav-item {
+      height: 60px;
+      background-color: coral;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &.active-nav {
+        background-color: red;
+      }
+
+      &:hover {
+        background-color: yellow;
+      }
+    }
   }
 
   .main-content {
     flex: 1;
     background-color: khaki;
+
+    .screen {
+      margin: 10px;
+    }
   }
+}
