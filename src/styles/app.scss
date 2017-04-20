@@ -9,8 +9,7 @@ body {
   width: 100%;
 }
 
-.app-wrapper {
-  display: flex;
+.app-wrapper { display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
@@ -18,7 +17,7 @@ body {
   height: 100%;
 
   .app-nav {
-    width: 100px;
+    width: 60px;
     background-color: blue;
   }
 
