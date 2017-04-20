@@ -7,20 +7,26 @@ import './styles/app.css';
 
 class App extends Component {
 
-  render(){
-    var screenIndex = 2;
+  constructor(props) {
+    super(props)
+    this.state = {
+      screenIndex: 1,
 
+    }
+  }
+
+  render(){
     var ActiveScreen
 
-    if(screenIndex === 1) {
+    if(this.state.screenIndex === 1) {
       ActiveScreen = <Screen1 />
     }
 
-    if(screenIndex === 2) {
+    if(this.state.screenIndex === 2) {
       ActiveScreen = <Screen2 />
     }
 
-    if(screenIndex === 3) {
+    if(this.state.screenIndex === 3) {
       ActiveScreen = <Screen3 />
     }
 
@@ -33,13 +39,13 @@ class App extends Component {
 
       <div className="app-wrapper">
         <div className="app-nav">
-          <div className="nav-item screen1">
+          <div className="nav-item screen1" onClick={() => { this.setState({screenIndex: 1})}}>
             <p>Screen 1</p>
           </div>
-          <div className="nav-item screen2">
+          <div className="nav-item screen2" onClick={() => { this.setState({screenIndex: 2})}}>
             <p>Screen 2</p>
           </div>
-          <div className="nav-item screen3">
+          <div className="nav-item screen3" onClick={() => { this.setState({screenIndex: 3})}}>
             <p>Screen 3</p>
           </div>
         </div>
