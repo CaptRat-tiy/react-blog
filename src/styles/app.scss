@@ -5,7 +5,7 @@ body {
 
 .app-header {
   height: 60px;
-  background-color: black;
+  background-color: khaki;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@ body {
 
   .app-nav {
     width: 100px;
-    background-color: blue;
+    background-color: lightblue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -46,7 +46,7 @@ body {
 
   .main-content {
     flex: 1;
-    background-color: khaki;
+    background-color: lightgrey;
 
     .screen {
       margin: 10px;
