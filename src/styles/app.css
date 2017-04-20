@@ -1,11 +1,13 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .app-header {
   height: 60px;
   background-color: slategrey;
-  width: 100%; }
+  width: 100%;
+}
 
 .app-wrapper {
   display: flex;
@@ -41,11 +43,11 @@ body {
 
 .app-wrapper .app-nav .nav-item:hover {
   background-color: yellow;
-  }
+}
 
 .app-wrapper .main-content {
   flex: 1;
-  background-color: khaki;
+  background-color: black;
 }
 
 .app-wrapper .main-content .screen {
