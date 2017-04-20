@@ -35,7 +35,7 @@ body {
         background-color: yellow; }
   .app-wrapper .main-content {
     flex: 1;
-    background-color: lightgrey; }
+    background-color: grey; }
     .app-wrapper .main-content .screen {
       margin: 10px;
       color: darkblue;

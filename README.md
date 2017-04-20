@@ -3,6 +3,8 @@ Course assignment
 To activate Sass changes, you must run
 "sass --watch ./src/styles/app.scss:./src/styles/app.css" in an isolated terminal (meaning, don't turn it off!)
 
+THEN... run npm start
+
 The blog display needs a header, main content area, and footer.
 
 Main content area needs to have a main area for actual content and at least one sidebar.
