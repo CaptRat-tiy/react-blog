@@ -37,6 +37,8 @@ body {
     flex: 1;
     background-color: lightgrey; }
     .app-wrapper .main-content .screen {
-      margin: 10px; }
+      margin: 10px;
+      color: darkblue;
+      font-style: italic; }
 
 /*# sourceMappingURL=app.css.map */
