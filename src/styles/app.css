@@ -16,7 +16,6 @@ body {
   height: 100%;
 }
 
-<<<<<<< HEAD
 .app-wrapper .app-nav {
   width: 100px;
   background-color: lightblue;
@@ -25,26 +24,6 @@ body {
   justify-content: flex-start;
   align-items: stretch;
 }
-=======
-  .app-wrapper .app-nav {
-    width: 100px;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-
-      .app-wrapper .app-nav .nav-item {
-      height: 60px;
-      background-color: coral;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
->>>>>>> ea9c9069ea55abbe010998a777c5100259cc0677
 
 .app-wrapper .app-nav .nav-item {
   height: 60px;
