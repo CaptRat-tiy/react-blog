@@ -6,12 +6,22 @@ class App extends Component {
 
   render(){
     return (
-    <h1>Hello</h1>
+    <div className="app">
+      <div className="app-header"></div>
+      <div className="app-wrapper">
+        <div className="app-nav">
+        </div>
+        <div className="main-content">
+          {this.props.children}
+        </div>
+      </div>
+    </div>
     )
   }
 }
 
 ReactDOM.render(
-  <App />,
+  <App>
+  </App>,
   document.getElementById('root')
 );
