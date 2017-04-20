@@ -18,23 +18,23 @@ body {
   height: 100%;
 }
 
-  .app-nav {
+  .app-wrapper .app-nav {
     width: 100px;
     background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+  }
 
-      .nav-item {
-        height: 60px;
-        background-color: coral;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+      .app-wrapper .app-nav .nav-item {
+      height: 60px;
+      background-color: coral;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
   }
 
   .main-content {

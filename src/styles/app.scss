@@ -9,21 +9,34 @@ body {
   width: 100%;
 }
 
-.app-nav {
-  width: 60px;
-  background-color: blue;
+.app-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-
-    .nav-item {
-      height: 60px;
-      background-color: coral;
-    }
+  min-height: 1000px;
+  height: 100%;
 }
 
-.main-content {
-  flex: 1;
-  background-color: khaki;
-}
+  .app-nav {
+    width: 100px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+      .nav-item {
+        height: 60px;
+        background-color: coral;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+  }
+
+  .main-content {
+    flex: 1;
+    background-color: khaki;
+  }
