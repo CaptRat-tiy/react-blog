@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import Nav from './components/nav'
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import Nav from './components/Nav'
+import {EventEmitter } from 'events'
 import Screen1 from './screens/screen1'
 import Screen2 from './screens/screen2'
 import Screen3 from './screens/screen3'
-import './styles/app.css';
+import './styles/app.css'
 
 class App extends Component {
 
@@ -15,37 +16,44 @@ class App extends Component {
     }
   }
 
-  updateScreen(newScreenIndex) {
-    this.setState({
-      screenIndex: newScreenIndex})
+  componentWillMount() {
+    this.eventEmitter = new EventEmitter()
+
+    this.eventEmitter.addListener("navigateScreen", ({screenIndex}) => {
+      this.updateScreen({newScreenIndex: screenIndex})
+  })
+}
+
+  updateScreen({newScreenIndex}) {
+    this.setState({screenIndex: newScreenIndex})
   }
 
-  render(){
+  render() {
     var ActiveScreen
 
-    if(this.state.screenIndex === 1) {
+    if(this.state.screenIndex=== 1){
       ActiveScreen = <Screen1 />
     }
 
-    if(this.state.screenIndex === 2) {
+    if(this.state.screenIndex=== 2){
       ActiveScreen = <Screen2 />
     }
 
-    if(this.state.screenIndex === 3) {
+    if(this.state.screenIndex=== 3){
       ActiveScreen = <Screen3 />
     }
 
-
-    return (
+  return (
     <div className="app">
-      <div className="app-header">
-        <p>THIS IS THE HEADER</p>
+      <div className="app-header"></div>
+        <div className="app-wrapper">
+          <Nav eventEmitter = {this.eventEmitter}
+          screenIndex={this.state.screenIndex} />
+          <div className="main-content">
+            {ActiveScreen}
+          </div>
+        </div>
       </div>
-
-      </div>
-
-
-
     )
   }
 }
