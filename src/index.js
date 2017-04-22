@@ -46,14 +46,14 @@ class App extends Component {
   return (
     <div className="app">
       <div className="app-header"></div>
-        <div className="app-wrapper">
-          <Nav eventEmitter = {this.eventEmitter}
+      <div className="app-wrapper">
+        <Nav eventEmitter={this.eventEmitter}
           screenIndex={this.state.screenIndex} />
           <div className="main-content">
             {ActiveScreen}
           </div>
-        </div>
       </div>
+    </div>
     )
   }
 }
