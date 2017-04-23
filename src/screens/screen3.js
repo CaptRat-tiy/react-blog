@@ -2,6 +2,10 @@ import React, {Component } from 'react'
 
 class Screen3 extends Component {
 
+  componentWillMount() {
+  this.props.eventEmitter.emit("navigateScreen", {screenIndex: 3})
+}
+
   render() {
     return (
       <div className="screen screen3">
@@ -10,6 +14,5 @@ class Screen3 extends Component {
     )
   }
 }
-
 
 module.exports = Screen3
